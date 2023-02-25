@@ -104,5 +104,24 @@ def smooth_signal(sr: pd.Series, n=3):
 
 
 
+def convert(x,y):
+    """
+    helper function to convert lat,long into the image coordinates
+    """
+    height, width, _ = im.shape
+
+    x1, x2 = -122.65, -120.95
+    y1, y2 = 47.025, 47.87
+
+    xrange = x2 - x1
+    px = (x - x1) / xrange
+
+    yrange = y2 - y1
+    py = 1 - (y - y1) / yrange
+
+    return (px * width, py * height)
+
+
+
 if __name__ == '__main__':
     pass  

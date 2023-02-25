@@ -3,25 +3,10 @@
 ## Description
 EDA analysis of the King County dataset
 
-## Requirements
-
-- pyenv
-- python==3.9.8
-
-## Setup
-
-To view and modify the `EDA.ipynb` it is necessray to do these steps:
-
-```
-pyenv local 3.9.8
-python -m venv .venv
-source .venv/bin/activate
-pip install --upgrade pip
-pip install -r requirements.txt
-```
 
 ## Contents of this repository
 
+- `EDA.pdf` : presentation of the project
 - `EDA.ipynb` : Jupyter notebook 
 - `helper_functions.py` : helper functions used in the notebook
 - `.mapbox_token`: file containing a token for the `plotly` libarary
